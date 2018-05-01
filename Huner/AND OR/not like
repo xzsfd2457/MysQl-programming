@@ -8,4 +8,4 @@ insert into employee(name,age,address,salary,gen) values ("chaitali","25","mumba
 insert into employee(name,age,address,salary,gen) values ("hardik",  "27","bhopal","8500",'m');
 insert into employee(name,age,address,salary,gen) values ("komal",   "22","mp","4500",'m');
 insert into employee(name,age,address,salary,gen) values ("muffy",   "24","indore","10000",'m');
-select * from employee where age like '%25%';
+select * from employee where age notlike '%25%';
