@@ -1,0 +1,11 @@
+create database company;
+use company;
+create table employee(name varchar(90), age varchar(10),address varchar(90),salary varchar(50));
+insert into employee(name,age,address,salary) values ("ramesh",  "32","ahmedabad","2000");
+insert into employee(name,age,address,salary) values ("khilan",  "25","delhi","1500");
+insert into employee(name,age,address,salary) values ("kaushik", "23","kota","2000");
+insert into employee(name,age,address,salary) values ("chaitali","25","mumbai","6500");
+insert into employee(name,age,address,salary) values ("hardik",  "27","bhopal","8500");
+insert into employee(name,age,address,salary) values ("komal",   "22","mp","4500");
+insert into employee(name,age,address,salary) values ("muffy",   "24","indore","10000");
+SELECT COUNT(age) FROM employee GROUP BY age;
