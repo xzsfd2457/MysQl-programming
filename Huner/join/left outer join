@@ -27,4 +27,4 @@ insert into personalinfo values('Wonder',6,50,'Eng',50000);
 insert into personalinfo values('super',4,40,'Hindi',20000);
 insert into personalinfo values('Bahu',7,80,'Multi',10000);
 insert into personalinfo values('junk',7,80,'junky',10000);
-select mf.first_name , pi.height , pi.weight , pi.lang , pi.fans from myfriends mf, personalinfo pi where mf.first_name = pi.first_name;
+select mf.first_name , pi.height , pi.weight , pi.lang , pi.fans from myfriends mf left join personalinfo pi on mf.first_name = pi.first_name;
